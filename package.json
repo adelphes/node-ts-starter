@@ -7,12 +7,16 @@
     "build": "tsc",
     "check": "tsc --noEmit",
     "clean": "rimraf build",
+    "lint": "eslint . --ext .ts",
     "start": "node ./build/index.js",
     "ts-init": "npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib esnext --target esnext --module commonjs --noImplicitAny true"
   },
   "license": "ISC",
   "devDependencies": {
     "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "eslint": "*",
     "rimraf": "*",
     "ts-node": "*",
     "typescript": "*"
