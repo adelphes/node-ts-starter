@@ -1,0 +1,20 @@
+{
+  "name": "ts-starter",
+  "version": "1.0.0",
+  "description": "Base files for a node-typescriot project",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "clean": "rimraf build",
+    "start": "node ./build/index.js",
+    "ts-init": "npx tsc --init --rootDir src --outDir build --esModuleInterop --resolveJsonModule --lib esnext --target esnext --module commonjs --noImplicitAny true"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "*",
+    "rimraf": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
+}
